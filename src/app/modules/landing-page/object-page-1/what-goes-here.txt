@@ -1,0 +1,1 @@
+The object page component goes here. Any sub component needed for the object page would be further nested components within this folder.

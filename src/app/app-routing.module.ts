@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'primary-section', loadChildren: () => import('./modules/primary-section/primary-section.module')
-    .then(m => m.PrimarySectionModule) },
-  { path: '', pathMatch: 'full', redirectTo: 'primary-section' },
-  { path: '**', redirectTo: 'primary-section' }
+  { path: 'landing-page', loadChildren: () => import('./modules/landing-page/landing-page.module')
+    .then(m => m.LandingPageModule) },
+  { path: '', pathMatch: 'full', redirectTo: 'landing-page' },
+  { path: '**', redirectTo: 'landing-page' }
 ];
 
 @NgModule({
