@@ -1,0 +1,46 @@
+// stylelint-disable selector-type-no-unknown
+.skip-link
+{
+  position: absolute;
+  top: -50px;
+  left: 0;
+  z-index: 100;
+  border: 0;
+  padding: 5px 10px;
+  background: $accent-color-primary;
+  color: $coconut;
+  transition: top 1s ease-out;
+
+  &:hover
+  {
+    color: $coconut;
+  }
+
+  &:focus
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 0.5s ease-in;
+  }
+}
+
+app-base-template
+{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-body
+{
+  display: flex;
+  flex: 1 1 auto;
+  overflow-y: hidden;
+}
+
+.app-main
+{
+  width: 100%;
+  overflow-y: auto;
+}

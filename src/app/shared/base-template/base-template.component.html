@@ -1,0 +1,29 @@
+<a href="./#mainContent" class="skip-link" (click)="skipToMain($event)">
+  Skip to main content
+</a>
+<bp-header
+  product="product"
+  [hasContextSelector]="false"
+>
+  <ul nav-major class="navbar-nav nav-major">
+    <li class="nav-item">
+      <bp-action
+        text="Landing Page"
+        classes="nav-link active"
+        bpRouterLink="./landing-page"
+      ></bp-action>
+    </li>
+  </ul>
+</bp-header>
+<div class="app-body">
+  <bp-collapsible-panel *ngIf="navSecondary">
+    <bp-nav-secondary
+      panel-content
+      [title]="navSecondary.title"
+      [items]="navSecondary.items"
+    ></bp-nav-secondary>
+  </bp-collapsible-panel>
+  <main id="mainContent" class="app-main">
+    <ng-content></ng-content>
+  </main>
+</div>
