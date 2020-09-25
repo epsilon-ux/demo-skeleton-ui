@@ -1,6 +1,10 @@
-# TestingGroundsV8
+# Skeleton UI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.29.
+
+## Instructions
+
+See [Blueprint](https://epsilon-blueprint.netlify.app/library/introduction) for more information about Skeleton UI.
 
 ## Development server
 
